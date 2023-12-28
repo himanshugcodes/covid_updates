@@ -1,38 +1,107 @@
-.App {
-  text-align: center;
+tr td:first-child{
+  font-weight: 600;
+  color:yellow;
+  text-transform:uppercase;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+tr th{
+  color:yellow;
+  text-transform:uppercase;
 }
+html{
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+  
+                background:#000;
+
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+section{
+  background:#000;
+  padding: 20px 0px;
+}
+h3{
+  margin-bottom:0px!important;
+  font-size: 20px!important;
+}
+section h2{
+  /*border-bottom:2px solid yellow!important;*/
+  font-size:30px;
+  font-weight: 700;
+  text-shadow: 3px 7px 6px black;
+}
+.card:hover{
+  background-color:rgba(255, 255, 255, 0.068)!important;
+  color: #000;
+  box-shadow: 1px 1px 5px 1px #ccc;
+  border:none!important;
+}
+.card h3 {
+  color:yellow;
+  font-size: 22px!important;
+  text-transform: uppercase;
+}
+.card h3 span{
+  color:#fff;
+  font-size: 13px!important;
+}
+.card h2{
+margin-top:5px;
+font-size:36px!important;
+text-shadow: 1px 1px 1px 1px #ccc;
+border:none!important;
+text-shadow: 3px 7px 6px black;
+}
+/**-------- Header-------**/
+.header {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
+  width: 100%;
+  padding: 20px 4.5% 10px 4.5%;
+  background-color:#343a40;
+  color: #fff;
+}
+.header-ul li{
+  display: inline-block;
+  margin-right: 15px;
+}
+.header-ul li a:hover{
+  background-color: yellow!important;
+  color:#000;
+}
+.header-ul li a{
+   color:#fff;
+   text-decoration: none;
+   font-size: 15px;
+   font-weight: 700;
+   text-transform: capitalize;
+    padding: 10px 8px;
+}
+.header-logo h3{
+  color: yellow;
+  text-transform: uppercase;
+  font-size: 24px!important;
+  font-weight: 800;
+  letter-spacing: 1.2px;
+  text-shadow: 3px 3px 3px #e00909;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media only screen and (max-width:750px){
+  .header {
+    padding: 20px 2%;
   }
-  to {
-    transform: rotate(360deg);
+  .header-ul li{
+    margin-right: 1px;
+  }
+  .header-ul li a{
+    font-size: 12px;
+    font-weight: 600;
+     padding: 10px 5px;
+ }
+ .header-nav ul{
+  padding-left:0px;
+ }
+  .header-logo h3{
+    color: yellow;
+    font-size: 12px!important;
+    text-shadow: 2px 2px 2px #e00909;
+    padding: 4px;
   }
 }
